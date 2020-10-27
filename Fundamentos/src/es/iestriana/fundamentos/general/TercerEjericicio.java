@@ -13,6 +13,7 @@ public class TercerEjericicio {
 	public static void main(String[] args) {
 		System.out.println("Introduzca segundos:");
 		int segundosintroducidos = sc.nextInt();
+		
 		int horas = segundosintroducidos / 3600; // 1 hora = 3600 segundos
 		int minutos = (segundosintroducidos - horas*3600) / 60;
 		int segundos = segundosintroducidos - (horas*3600) - (minutos*60);
@@ -24,6 +25,7 @@ public class TercerEjericicio {
 							" "+
 							"Segundos:"+
 							segundos);
+		sc.close(); //esto lo ponemos para cerrar la comunicacion con el scaner
 
 	}
 
